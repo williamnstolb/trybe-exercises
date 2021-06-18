@@ -1,35 +1,11 @@
-.super-mario {
-  width: 200px;
-  position: absolute;
-  z-index: 1;
+h1, p {
+  text-align: center;
 }
 
-.goomba {
-  width: 100px;
-position: absolute;
-top: 370px;
+li:hover {
+  background-color: chartreuse;
 }
 
-.baloon {
-position: absolute;
-top: 50px;
-left: 250px;
-z-index: 3;
-}
-
-.speach {
-  position: absolute;
-  font-size: 25px;
-  top: 75px;
-  left: 275px;
-  z-index: 4;
-}
-
-.bowser {
-  width: 200px;
-  position: absolute;
-  font-size: 25px;
-top: 140px;
-  left: 530px;
-  z-index: 2;
+li:active {
+  color: rgb(255, 255, 255);
 }
