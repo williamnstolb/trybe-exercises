@@ -3,3 +3,23 @@ div:hover {
   border-style: inset;
   border-width: 10x;
 }
+
+#corprimaria {
+  background-color: red;
+}
+
+#corsecundaria {
+  background-color: blue;
+}
+
+#corcomplementar {
+  background-color: yellow;
+}
+
+#corescura {
+  background-color: purple;
+}
+
+#corclara {
+  background-color: rgb(215, 240, 200);
+}
