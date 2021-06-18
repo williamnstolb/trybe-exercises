@@ -23,3 +23,26 @@ div:hover {
 #corclara {
   background-color: rgb(215, 240, 200);
 }
+
+#tag1 {
+  font-size: 15px;
+  font-style: italic;
+}
+
+#tag2 {
+  font-size: 25px;
+}
+
+#tag3 {
+  font-size: 65px;
+  font-style: italic;
+}
+
+#tag4 {
+  font-size: 45px;
+}
+
+#tag5 {
+  font-size: 55px;
+  font-style: italic;
+}
