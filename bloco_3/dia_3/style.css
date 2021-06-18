@@ -4,6 +4,7 @@ h1, p {
 
 li:hover {
   background-color: chartreuse;
+  list-style: none;
 }
 
 li:active {
