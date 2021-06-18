@@ -1,7 +1,3 @@
-.listaNaoOrdenada {
-
-}
-
 .listaOrdenada{
   background-color: yellow;
 }
@@ -21,4 +17,11 @@
 .titulo em {
   font-size: 40px;
   border: 1px solid black;
+}
+
+.listas li {
+  font-size: 20px;
+}
+.listas li em {
+  font-weight: bold;
 }
