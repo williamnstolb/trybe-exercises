@@ -6,10 +6,19 @@
   background-color: yellow;
 }
 
-.impar {
+.listaOrdenada .impar {
   text-transform: uppercase;
 }
 
-.par {
+.listaOrdenada .par {
   color: green;
+}
+
+.titulo {
+  color: red;
+}
+
+.titulo em {
+  font-size: 40px;
+  border: 1px solid black;
 }
