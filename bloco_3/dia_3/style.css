@@ -25,3 +25,9 @@
 .listas li em {
   font-weight: bold;
 }
+.linguagens .primeiras3 {
+  color: blue;
+}
+.linguagens .Java {
+  background-color: pink;
+}
