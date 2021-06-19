@@ -26,8 +26,7 @@ h1 {
   width: 300px;
 }
 
-section li{
-  align-items: center;
+section li{  
   list-style-type: none;
 }
 
@@ -39,4 +38,24 @@ section li{
 }
 .bloco2 {
   margin-left: 100px;
+}
+
+.bl1, .bl2 {
+  display: inline-block;
+}
+
+.bl {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  font-size: 10pt;
+  font-weight: bolder;
+  margin-top: .28123em;
+  font-family: verdana, arial;
+  padding: 4px 0px;
 }
