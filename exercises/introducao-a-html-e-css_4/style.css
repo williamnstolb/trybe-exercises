@@ -5,6 +5,15 @@ body {
 header {
   text-align: center;
   color: cornflowerblue;
-  padding: 10px solid black;
+  font-size: 30px;
 }
 
+h1 {
+  text-align: center;
+  color: rgb(100, 205, 237);
+  font-size: 20px;
+}
+
+article p {
+  text-align: justify;
+}
