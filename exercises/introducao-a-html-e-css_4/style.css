@@ -36,3 +36,8 @@ table {
   color: blue;
   margin: auto;
 }
+
+img {
+  max-width: 50%;
+  margin-left: 205px;
+}
