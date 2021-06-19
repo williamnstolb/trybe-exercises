@@ -1,0 +1,33 @@
+.listaOrdenada{
+  background-color: yellow;
+}
+
+.listaOrdenada .impar {
+  text-transform: uppercase;
+}
+
+.listaOrdenada .par {
+  color: green;
+}
+
+.titulo {
+  color: red;
+}
+
+.titulo em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+.listas li {
+  font-size: 20px;
+}
+.listas li em {
+  font-weight: bold;
+}
+.linguagens .primeiras3 {
+  color: blue;
+}
+.linguagens .Java {
+  background-color: pink;
+}
