@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(215, 238, 238);
+align-items: center;}
+
+header {
+  text-align: center;
+  color: cornflowerblue;
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(100, 205, 237);
+  font-size: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+
+section p {
+  text-align: justify;
+  margin: auto;
+}
+
+section h1 {
+  font-style: italic;
+}
+
+article h1 {
+  font-style: normal;
+}
+
+table {
+  color: blue;
+  margin: auto;
+}
+
+img {
+  max-width: 50%;
+  margin: auto;
+}
+
+article {
+  
+  max-width: 50%;
+}
+aside {
+ float: right;
+ max-width: 40%;
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ margin-right: 0;
+}
