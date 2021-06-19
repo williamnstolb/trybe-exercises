@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(215, 238, 238);
+}
+
+header {
+  text-align: center;
+  color: cornflowerblue;
+  padding: 10px solid black;
+}
+
