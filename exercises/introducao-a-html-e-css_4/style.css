@@ -4,17 +4,17 @@ align-items: center;}
 
 header {
   text-align: center;
-  color: cornflowerblue;
+  color: rgb(10, 91, 241);
   font-size: 30px;
 }
 
 h1 {
   text-align: center;
-  color: rgb(100, 205, 237);
+  color: rgb(75, 64, 235);
   font-size: 20px;
 }
 
-h3 {
+h2 {
   text-align: center;
 }
 
