@@ -167,3 +167,40 @@ switch (chess.toLowerCase()) {
     console.log("Estamos falando do mesmo jogo? Olha só Google, o que surgiu aqui...")
 
 }
+
+//Questão 7:
+
+let porcentagem = 101;
+
+switch (true) {
+
+  case porcentagem < 0:
+    break;
+
+  case porcentagem < 50:
+    console.log("F");
+    break;
+
+  case porcentagem < 60:
+    console.log("E");
+    break;
+
+  case porcentagem < 70:
+    console.log("D");
+    break;
+
+  case porcentagem < 80:
+    console.log("C");
+    break;
+
+  case porcentagem < 90:
+    console.log("B");
+    break;
+
+  case porcentagem < 100:
+    console.log("A");
+    break;
+  
+  default:
+    console.log("Rapazo(a), tu é o bichão mermo, hein...!")
+}
