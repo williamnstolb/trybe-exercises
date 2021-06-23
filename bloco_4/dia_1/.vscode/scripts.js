@@ -250,3 +250,50 @@ if (valorCusto < 0 || valorVenda < 0){
   console.log(lucro*1000);
 }
 
+//Questão 11:
+
+let salarioBruto = 10000;
+let descontoInss;
+let salarioLiquido;
+
+switch (true){
+  case salarioBruto < 1556.95:
+    descontoInss = salarioBruto - (salarioBruto * 0.08);
+    break;
+
+    case salarioBruto < 2594.93:
+      descontoInss = salarioBruto - (salarioBruto * 0.09);
+    break;
+
+    case salarioBruto < 5189.83:
+      descontoInss = salarioBruto - (salarioBruto * 0.11);
+    break;
+
+    case salarioBruto >= 5189.82:
+      descontoInss = salarioBruto - 570.88;
+    break;
+}
+
+switch (true){
+  case descontoInss < 1903.99:
+    salarioLiquido = descontoInss;
+    break;
+
+    case descontoInss < 2826.66:
+    salarioLiquido = descontoInss - (descontoInss * 0.075) + 142.80;
+    break;
+
+    case descontoInss < 3751.06:
+      salarioLiquido = descontoInss - (descontoInss * 0.15) + 354.80;
+    break;
+
+    case descontoInss < 4664.69:
+      salarioLiquido = descontoInss - (descontoInss * 0.22) + 636.13;
+    break;
+
+    case descontoInss >= 4664.68:
+      salarioLiquido = descontoInss - (descontoInss * 0.27) + 869,36;
+    break;
+}
+
+console.log("Seu salário líquido é de: ",salarioLiquido);
