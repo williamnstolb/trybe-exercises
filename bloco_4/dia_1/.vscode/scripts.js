@@ -114,3 +114,20 @@ switch (sinal) {
     console.log("Talvez você tenha encontrado um novo padrão, fique feliz, mas verifique se não foi um erro!")
 
 }
+
+//Questão 5:
+
+let angA = 70;
+let angB = 60;
+let angC = 60;
+let somaAngInterno = angA + angB + angC;
+let triangulo;
+
+if (somaAngInterno === 180) {
+  triangulo = true;
+}else {
+  triangulo = false;
+}
+
+console.log(triangulo);
+
