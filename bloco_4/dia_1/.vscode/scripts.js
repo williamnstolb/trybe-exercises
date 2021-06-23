@@ -1,8 +1,10 @@
-let a = 10;
+let a = 4;
 let b = 4;
 
 let operacao;
 operacao = "modulo";
+
+//Questão 1:
 
 switch (operacao) {
   case "adicao":
@@ -17,7 +19,7 @@ switch (operacao) {
     console.log("O produto dos dois algarismos é igual a: ", a * b);
     break;
 
-  case "divisão":
+  case "divisao":
     console.log("A divisão dos dois algarismos é igual a: ", a / b);
     break;
 
@@ -29,3 +31,10 @@ switch (operacao) {
   default:
     console.log("Operação não válida, procure um médico...");
 }
+
+//Questão 2:
+
+if (a > b) {console.log("O maior valor é: ", a);}
+else if (a<b) {console.log("O maior valor é: ", b);}
+else {console.log("Os dois valores são idênticos ou não são números, fica o mistério no ar!");}
+
