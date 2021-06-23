@@ -1,5 +1,5 @@
 let a = 4;
-let b = 5;
+let b = 6;
 let c = 10;
 
 let operacao;
@@ -204,3 +204,19 @@ switch (true) {
   default:
     console.log("Rapazo(a), tu é o bichão mermo, hein...!")
 }
+
+//Questão 8:
+
+let num1 = a%2;
+let num2 = b%2;
+let num3 = c%2;
+
+let tudoPar;
+
+if (num1 != 0 || num2 != 0 || num3 != 0){
+  tudoPar = false;
+}else {
+  tudoPar = true;
+}
+
+console.log(tudoPar);
