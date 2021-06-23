@@ -232,3 +232,21 @@ if (num1 != 0 || num2 != 0 || num3 != 0){
 }
 
 console.log(peloMenosUmImpar);
+
+//Questão 10:
+
+let valorCusto = -1000;
+let valorVenda = 2000;
+
+let impostoSobreOCusto = 0.2 * valorCusto;
+
+let valorCustoTotal = valorCusto + impostoSobreOCusto;
+
+let lucro = valorVenda - valorCustoTotal;
+
+if (valorCusto < 0 || valorVenda < 0){
+  console.log("Vende a empresa que tem algo errado. Como que tem valor negativo nessa bagaça?")
+}else {
+  console.log(lucro*1000);
+}
+
