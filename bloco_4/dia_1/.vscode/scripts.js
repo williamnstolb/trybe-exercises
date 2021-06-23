@@ -1,5 +1,5 @@
 let a = 4;
-let b = 6;
+let b = 7;
 let c = 10;
 
 let operacao;
@@ -211,12 +211,24 @@ let num1 = a%2;
 let num2 = b%2;
 let num3 = c%2;
 
-let tudoPar;
+let peloMenosUmPar;
 
-if (num1 != 0 || num2 != 0 || num3 != 0){
-  tudoPar = false;
+if (num1 === 0 || num2 === 0 || num3 === 0){
+  peloMenosUmPar = true;
 }else {
-  tudoPar = true;
+  peloMenosUmPar = false;
 }
 
-console.log(tudoPar);
+console.log(peloMenosUmPar);
+
+//Questão 9:
+
+let peloMenosUmImpar;
+
+if (num1 != 0 || num2 != 0 || num3 != 0){
+  peloMenosUmImpar = true;
+}else {
+  peloMenosUmImpar = false;
+}
+
+console.log(peloMenosUmImpar);
