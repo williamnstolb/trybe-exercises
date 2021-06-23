@@ -117,17 +117,53 @@ switch (sinal) {
 
 //Questão 5:
 
-let angA = 70;
+let angA = -70;
 let angB = 60;
 let angC = 60;
 let somaAngInterno = angA + angB + angC;
 let triangulo;
 
-if (somaAngInterno === 180) {
-  triangulo = true;
-}else {
-  triangulo = false;
+if (angA > 0 && angB > 0 && angC > 0) {
+  if (somaAngInterno === 180) {
+    triangulo = true;
+  } else {
+    triangulo = false;
+  }
+  console.log(triangulo);
+} else {
+  console.log("Angulo negativo só no mundo do buraco negativo! Que tal rever onde está o erro?")
 }
 
-console.log(triangulo);
+//Questão 6:
 
+let chess = "REI";
+
+switch (chess.toLowerCase()) {
+  case "rei":
+    console.log("Os movimentos para a peça", chess, "são em qualquer direção e apenas uma casa por vez (fora na jogada ROCK).");
+    break;
+
+  case "rainha":
+    console.log("Os movimentos para a peça", chess, "são pra onde ela quiser, o corpo é dela, a regra é dela.");
+    break;
+
+  case "bispo":
+    console.log("Os movimentos para a peça", chess, "são em diagonal, se não estiver rezando ajoelhado.");
+    break;
+
+  case "cavalo":
+    console.log("Os movimentos para a peça", chess, "são em L e pula por cima de todo mundo sem machucar.");
+    break;
+
+  case "torre":
+    console.log("Os movimentos para a peça", chess, "são na vertical e na horizontal.");
+    break;
+
+  case "peao":
+    console.log("Os movimentos para a peça", chess, "são pra frente ou na diagonal se for pra cometer um crime, sempre de uma em uma com exceção da primeira vez que se movimentar.");
+    break;
+
+  default:
+    console.log("Estamos falando do mesmo jogo? Olha só Google, o que surgiu aqui...")
+
+}
