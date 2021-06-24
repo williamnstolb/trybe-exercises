@@ -49,7 +49,13 @@ console.log('A quantidade de número(s) impar(es) é: ', quantImpar);
 
 //Questão 7:
 
-
+let menorValor = maiorValor;
+for (let index = 0; index < numbers.length; index += 1) {
+  if (menorValor > numbers[index]){
+    menorValor = numbers[index];
+  }
+}
+console.log('O menor valor é: ', menorValor);
 
 //Questão 8:
 
