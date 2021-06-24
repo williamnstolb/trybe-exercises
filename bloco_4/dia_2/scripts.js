@@ -67,3 +67,6 @@ for (let index = 0; index < 25; index += 1) {
 
 //Questão 9:
 
+for (let index = 0; index < lista.length; index += 1) {
+  console.log(lista[index]/2);
+}
