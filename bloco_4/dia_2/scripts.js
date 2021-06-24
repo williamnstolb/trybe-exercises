@@ -39,7 +39,13 @@ console.log('O maior valor é: ', maiorValor);
 
 //Questão 6:
 
-
+let quantImpar = 0;
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index]%2 != 0){
+    quantImpar += 1;
+  }
+}
+console.log('A quantidade de número(s) impar(es) é: ', quantImpar);
 
 //Questão 7:
 
