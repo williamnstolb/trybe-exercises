@@ -21,7 +21,11 @@ console.log('A média aritmética é: ', mediaAritmetica);
 
 //Questão 4:
 
-
+if (mediaAritmetica > 20){
+  console.log('Valor maior que 20');
+}else {
+  console.log('Valor menor ou igual a 20');
+}
 
 //Questão 5:
 
