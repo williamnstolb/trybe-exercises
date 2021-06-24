@@ -29,7 +29,13 @@ if (mediaAritmetica > 20){
 
 //Questão 5:
 
-
+let maiorValor = 0;
+for (let index = 0; index < numbers.length; index += 1) {
+  if (maiorValor < numbers[index]){
+    maiorValor = numbers[index];
+  }
+}
+console.log('O maior valor é: ', maiorValor);
 
 //Questão 6:
 
