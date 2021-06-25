@@ -26,3 +26,21 @@ if (n > 0) {
 } else {
   console.log("Valor menor que 1.")
 }
+
+//Questão 3:
+console.log("Questão 3:")
+if (n > 0) {
+  let listaVazia = [];
+
+  for (let j = 1; j <= n; j += 1) {
+    listaVazia.push(' ');
+  }
+
+  for (let j = n; j >= 1; j -= 1) {
+    listaVazia[j] = ['*'];
+    console.log(listaVazia.join('  '));
+  }
+
+} else {
+  console.log("Valor menor que 1.")
+}
