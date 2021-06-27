@@ -97,3 +97,24 @@ let arrayTeste2 = [2, 4, 6, 7, 10, 0, -3];
 console.log(buscaIndiceMenorValor(arrayTeste2));
 
 //4
+
+function maiorPalavra(lista){
+
+  let maiorPalavra = lista[0];
+  for (let index = 1; index < lista.length; index += 1){
+    //Transforma as palavras em um array
+    let palavra2 = lista[index].split('');
+    //Tamanho de cada array para comparar
+    let tamanho1 = maiorPalavra.length;
+    let tamanho2 = palavra2.length;
+
+    if(tamanho1 < tamanho2){
+      maiorPalavra = lista[index];
+    }
+  }
+  //obs: Se duas ou mais possuem o mesmo tamanho, a primeira comparada é retornada
+  return maiorPalavra;
+} 
+
+let arrayTeste3 = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+console.log(maiorPalavra(arrayTeste3));
