@@ -76,7 +76,7 @@ function buscaIndiceMaiorValor(lista) {
   return indice;
 }
 
-let arrayTeste = [2,3,6,7,10,1];
+let arrayTeste = [2, 3, 6, 7, 10, 1];
 console.log(buscaIndiceMaiorValor(arrayTeste));
 
 //3
@@ -98,23 +98,51 @@ console.log(buscaIndiceMenorValor(arrayTeste2));
 
 //4
 
-function maiorPalavra(lista){
+function maiorPalavra(lista) {
 
   let maiorPalavra = lista[0];
-  for (let index = 1; index < lista.length; index += 1){
+  for (let index = 1; index < lista.length; index += 1) {
     //Transforma as palavras em um array
     let palavra2 = lista[index].split('');
     //Tamanho de cada array para comparar
     let tamanho1 = maiorPalavra.length;
     let tamanho2 = palavra2.length;
 
-    if(tamanho1 < tamanho2){
+    if (tamanho1 < tamanho2) {
       maiorPalavra = lista[index];
     }
   }
   //obs: Se duas ou mais possuem o mesmo tamanho, a primeira comparada é retornada
   return maiorPalavra;
-} 
+}
 
 let arrayTeste3 = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 console.log(maiorPalavra(arrayTeste3));
+
+//5
+function maisSeRepete(lista) {
+  
+  let contadorFinal = 0;
+  let numeroQueMaisSeRepete = lista[0];
+
+  for (let index = 0; index < lista.length; index += 1) {
+    let numeroAtual = lista[index];
+    let contadorAtual = 0;
+
+    for (let ind = 0; ind < lista.length; ind += 1) {
+      if (lista[index] === lista[ind]) {
+        contadorAtual += 1;
+      }
+    }
+    //compara pra ver quem tem a maior quantidade de numeros iguais na lista
+    if (contadorFinal < contadorAtual) {
+      contadorFinal = contadorAtual;
+      numeroQueMaisSeRepete = lista[index];
+
+    }
+  }
+  return numeroQueMaisSeRepete;
+}
+
+let arrayTeste4 = [2, 3, 2, 5, 8, 2, 3];
+console.log(maisSeRepete(arrayTeste4));
