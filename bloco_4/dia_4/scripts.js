@@ -34,3 +34,47 @@ for (let index in info) {
     console.log("Ambos recorrentes");
   }
 }
+
+//Parte 2 - Funções
+
+function verificaPalindrome(palavra) {
+  let ehPalindrome = false;
+  let listaPalavra = palavra.split('');
+  let ultimaPosicao = listaPalavra.length - 1;
+
+  //Comparador de strings
+  //1
+  for (let index = 0; index < Math.round(listaPalavra.length / 2); index += 1) {
+    if (listaPalavra[index] == listaPalavra[ultimaPosicao]) {
+      ehPalindrome = true;
+    } else {
+      ehPalindrome = false;
+      break;
+    }
+    ultimaPosicao = ultimaPosicao - 1;
+  }
+  return ehPalindrome;
+}
+
+let palavra = 'arara';
+console.log(verificaPalindrome(palavra));
+
+palavra = 'desenvolvimento';
+console.log(verificaPalindrome(palavra));
+
+//2
+function buscaIndiceMaiorValor(lista) {
+  let maiorValor = lista[0];
+  let indice = 0;
+
+  for (let index = 1; index < lista.length; index += 1) {
+    if (maiorValor < lista[index]) {
+      maiorValor = lista[index];
+      indice = index;
+    }
+  }
+  return indice;
+}
+
+let arrayTeste = [2,3,6,7,10,1];
+console.log(buscaIndiceMaiorValor(arrayTeste));
