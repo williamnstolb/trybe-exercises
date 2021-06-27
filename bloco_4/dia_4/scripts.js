@@ -169,3 +169,27 @@ function somatorio (n){
 }
 
 console.log(somatorio(5));
+
+//7
+console.log("Parte 2.7");
+
+function verificaFimPalavra (word, ending){
+
+  let palavra1 = word.split('');
+  let palavra2 = ending.split('');
+  let fimDaPalavra = false;
+  let ultimaPosicaoPalavra1 = palavra1.length - 1;
+
+  for(let index = (palavra2.length - 1); index >= 0; index -= 1){
+    if(palavra1[ultimaPosicaoPalavra1] === palavra2[index]){
+      fimDaPalavra = true;
+    }else {
+      fimDaPalavra = false;
+    }
+    ultimaPosicaoPalavra1 = ultimaPosicaoPalavra1 - 1;
+  }
+  return fimDaPalavra;
+}
+
+console.log(verificaFimPalavra('trybe', 'be'));
+console.log(verificaFimPalavra('joaofernando', 'fernan'));
