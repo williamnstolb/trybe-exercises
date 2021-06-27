@@ -78,3 +78,22 @@ function buscaIndiceMaiorValor(lista) {
 
 let arrayTeste = [2,3,6,7,10,1];
 console.log(buscaIndiceMaiorValor(arrayTeste));
+
+//3
+function buscaIndiceMenorValor(lista) {
+  let menorValor = lista[0];
+  let indice = 0;
+
+  for (let index = 1; index < lista.length; index += 1) {
+    if (menorValor > lista[index]) {
+      maenorValor = lista[index];
+      indice = index;
+    }
+  }
+  return indice;
+}
+
+let arrayTeste2 = [2, 4, 6, 7, 10, 0, -3];
+console.log(buscaIndiceMenorValor(arrayTeste2));
+
+//4
