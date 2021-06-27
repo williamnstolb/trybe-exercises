@@ -8,18 +8,24 @@ let info = {
 }
 
 //1
+console.log("Parte 1.1");
 console.log("Bem-vinda,", info.personagem);
+
 //2
+console.log("Parte 1.2");
 console.log(info.recorrente);
 //3
+console.log("Parte 1.3");
 for (let index in info) {
   console.log(index);
 }
 //4
+console.log("Parte 1.4");
 for (let index in info) {
   console.log(info[index]);
 }
 //5
+console.log("Parte 1.5");
 let info2 = {
   personagem: 'Tio Patinhas',
   origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
@@ -44,6 +50,7 @@ function verificaPalindrome(palavra) {
 
   //Comparador de strings
   //1
+  console.log("Parte 2.1");
   for (let index = 0; index < Math.round(listaPalavra.length / 2); index += 1) {
     if (listaPalavra[index] == listaPalavra[ultimaPosicao]) {
       ehPalindrome = true;
@@ -63,6 +70,7 @@ palavra = 'desenvolvimento';
 console.log(verificaPalindrome(palavra));
 
 //2
+console.log("Parte 2.2");
 function buscaIndiceMaiorValor(lista) {
   let maiorValor = lista[0];
   let indice = 0;
@@ -80,6 +88,7 @@ let arrayTeste = [2, 3, 6, 7, 10, 1];
 console.log(buscaIndiceMaiorValor(arrayTeste));
 
 //3
+console.log("Parte 2.3");
 function buscaIndiceMenorValor(lista) {
   let menorValor = lista[0];
   let indice = 0;
@@ -97,7 +106,7 @@ let arrayTeste2 = [2, 4, 6, 7, 10, 0, -3];
 console.log(buscaIndiceMenorValor(arrayTeste2));
 
 //4
-
+console.log("Parte 2.4");
 function maiorPalavra(lista) {
 
   let maiorPalavra = lista[0];
@@ -120,6 +129,7 @@ let arrayTeste3 = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 console.log(maiorPalavra(arrayTeste3));
 
 //5
+console.log("Parte 2.5");
 function maisSeRepete(lista) {
   
   let contadorFinal = 0;
@@ -146,3 +156,16 @@ function maisSeRepete(lista) {
 
 let arrayTeste4 = [2, 3, 2, 5, 8, 2, 3];
 console.log(maisSeRepete(arrayTeste4));
+
+//6
+console.log("Parte 2.6");
+function somatorio (n){
+  let somatorio = 0;
+
+  for (let index = 1; index <= n; index += 1){
+    somatorio = somatorio + index;
+  }
+  return somatorio;
+}
+
+console.log(somatorio(5));
