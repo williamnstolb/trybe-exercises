@@ -10,3 +10,6 @@ function mudaCorRetanguloInterno(cor){
   document.getElementsByClassName("center-content")[0].style.backgroundColor = "cor";
 }
 
+function corrigeTitle(){
+  document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
+}
