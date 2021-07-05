@@ -90,6 +90,14 @@
       imageSmall.setAttribute('src', 'https://picsum.photos/200');
       divLeftContent.appendChild(imageSmall);
 //8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+      let numeroPorExtenso = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let listaNaoOrdenada = document.createElement("ul");
+      divRightContent.appendChild(listaNaoOrdenada);
+      for(let index = 0; index < numeroPorExtenso.length; index += 1){
+        let item = document.createElement("il");
+        item.innerText = numeroPorExtenso[index]+ " ";
+        listaNaoOrdenada.appendChild(item);
+      }
 //9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
     </script>
   </body>
