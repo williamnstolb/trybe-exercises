@@ -65,6 +65,7 @@
     let texto = document.createTextNode("Exercício 5.2 - JavaScript DOM");
     titulo.appendChild(texto);
     elemento_pai.appendChild(titulo);
+    titulo.className = "title";
     //2 - Adicione a tag div com a classe main-content como filho da tag body ;
     let divMainContent = document.createElement("div");
     divMainContent.className = 'main-content';
@@ -73,6 +74,7 @@
     let divCenterContent = document.createElement("div");
     divCenterContent.className = 'center-content';
     divMainContent.appendChild(divCenterContent);
+    document.getElementsByClassName("center-content")[0].style.background = "green";
     //4 - Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
     let paragrafo = document.createElement("p");
     let teste = document.createTextNode("apenas um teste");
@@ -82,10 +84,12 @@
     let divLeftContent = document.createElement("div");
     divLeftContent.className = 'left-content';
     divMainContent.appendChild(divLeftContent);
+    divMainContent.removeChild(divLeftContent);
     //6 - Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
     let divRightContent = document.createElement("div");
     divRightContent.className = 'right-content';
     divMainContent.appendChild(divRightContent);
+    document.getElementsByClassName("right-content")[0].style.marginRight = "auto";
     //7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
     let imageSmall = document.createElement("image");
     imageSmall.className = "small-image";
@@ -97,12 +101,20 @@
     divRightContent.appendChild(listaNaoOrdenada);
     for (let index = 0; index < numeroPorExtenso.length; index += 1) {
       let item = document.createElement("il");
+      item.className = "paraRemover";
       item.innerText = numeroPorExtenso[index] + " ";
       listaNaoOrdenada.appendChild(item);
     }
-    //9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.      
+    let numerosRemover = document.querySelectorAll('.paraRemover');
+    for(let index = 0; index < numerosRemover.length; index += 1){
+      if(index === 9 || index === 8){
+        listaNaoOrdenada.removeChild(numerosRemover[index]);
+      }
+    }
+    //9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.  
     for (let index = 0; index < 3; index += 1) {
       let tags = document.createElement("h3");
+      tags.className = 'description';
       divMainContent.appendChild(tags);
     }
   </script>
