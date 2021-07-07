@@ -176,3 +176,21 @@ function selecionaTarefa() {
 selecionaTarefa();
 
 //Exercicio 10:
+function mudaCorDia() {
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let dias = document.querySelector('#days');
+  let tarefaDiv = document.querySelector('.task');
+  let corTarefa = tarefaDiv.style.backgroundColor;
+  
+  dias.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (tarefaSelecionada.length > 0 && eventTargetColor !== corTarefa) {
+      let color = tarefaSelecionada[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === corTarefa && tarefaSelecionada.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+mudaCorDia();
