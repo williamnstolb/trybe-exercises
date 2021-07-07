@@ -14,6 +14,7 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 criaDiasNoCalendario();
 feriados('Feriados');
+sextou('Sexta-feira');
 
 // Escreva seu código abaixo.
 //Exercicio 1:
@@ -25,7 +26,7 @@ function criaDiasNoCalendario() {
 
   for (let index = 0; index < dezDaysList.length; index += 1) {
 
-    let item = document.createElement("il");
+    let item = document.createElement("li");
     item.className = 'day';
 //para add uma nova classe a um item que ja possui classe se usa classList.add('nova classe')
     if(dezDaysList[index]===24 || dezDaysList[index]===25 || dezDaysList[index]===31){
@@ -48,4 +49,16 @@ function feriados(Feriados){
   buttonFeriado.id = 'btn-holiday';
   let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
   buttonsContainer.appendChild(buttonFeriado);
+}
+//Exercicio 3:
+
+
+//Exercicio 4:
+function sextou(sexta){
+
+  let buttonSexta = document.createElement('button');
+  let buttonTexto = document.createTextNode(sexta);
+  buttonSexta.id = 'btn-friday';
+  let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
+  buttonsContainer.appendChild(buttonSexta);
 }
