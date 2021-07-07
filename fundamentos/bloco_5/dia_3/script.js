@@ -12,9 +12,30 @@ function createDaysOfTheWeek() {
 };
 
 createDaysOfTheWeek();
+criaDiasNoCalendario();
 
 // Escreva seu código abaixo.
 
-function criaDiasNoCalendario(){
-  
+function criaDiasNoCalendario() {
+
+  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+
+  let listaDeDias = document.getElementById('days');
+
+  for (let index = 0; index < dezDaysList.length; index += 1) {
+
+    let item = document.createElement("il");
+    item.className = 'day';
+//para add uma nova classe a um item que ja possui classe se usa classList.add('nova classe')
+    if(dezDaysList[index]===24 || dezDaysList[index]===25 || dezDaysList[index]===31){
+      item.classList.add('holiday');
+    }
+
+    if(dezDaysList[index]===4 || dezDaysList[index]===11 || dezDaysList[index]===18 || dezDaysList[index]===25){
+      item.classList.add('friday');
+    }
+
+    item.innerText = dezDaysList[index];
+    listaDeDias.appendChild(item);
+  }
 }
