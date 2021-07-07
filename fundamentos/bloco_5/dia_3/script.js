@@ -13,9 +13,10 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 criaDiasNoCalendario();
+feriados('Feriados');
 
 // Escreva seu código abaixo.
-
+//Exercicio 1:
 function criaDiasNoCalendario() {
 
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -38,4 +39,13 @@ function criaDiasNoCalendario() {
     item.innerText = dezDaysList[index];
     listaDeDias.appendChild(item);
   }
+}
+//Exercicio 2:
+function feriados(Feriados){
+
+  let buttonFeriado = document.createElement('button');
+  let buttonTexto = document.createTextNode(Feriados);
+  buttonFeriado.id = 'btn-holiday';
+  let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
+  buttonsContainer.appendChild(buttonFeriado);
 }
