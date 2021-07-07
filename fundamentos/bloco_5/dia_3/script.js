@@ -54,21 +54,20 @@ function feriados(Feriados) {
 //Exercicio 3:
 //Usado para aprender a criar um botao e colocar nome: https://pt.stackoverflow.com/questions/217656/criar-botao-usando-document-createelement
 let clickButtonFeriado = document.getElementById('btn-holiday');
-clickButtonFeriado.addEventListener('click', recebeClick);
+clickButtonFeriado.addEventListener('click', recebeClickFeriado);
 
-function recebeClick() {
+function recebeClickFeriado() {
   let corFundo = document.getElementsByClassName('holiday')[0].style.backgroundColor;
   let diaFeriados = document.getElementsByClassName('holiday');
 
   if (corFundo !== 'green') {
     mudaFundo('green', diaFeriados);
-    corFundo = 'green';
-  }else{
+  } else {
     mudaFundo('rgb(238,238,238)', diaFeriados);
-    }
+  }
 }
 //Função auxiliar de recebeClick para evitar dois for, facilitando a leitura do codigo.
-function mudaFundo(cor, diaFeriados){
+function mudaFundo(cor, diaFeriados) {
   for (let index = 0; index < diaFeriados.length; index += 1) {
     document.getElementsByClassName('holiday')[index].style.backgroundColor = cor;
   }
@@ -83,4 +82,23 @@ function sextou(sexta) {
   buttonSexta.id = 'btn-friday';
   let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
   buttonsContainer.appendChild(buttonSexta);
+}
+
+//Exercicio 5:
+let clickButtonSexta = document.getElementById('btn-friday');
+clickButtonSexta.addEventListener('click', recebeClickSexta);
+
+function recebeClickSexta() {
+  let fundoSexta = document.getElementsByClassName('friday')[0].innerText;
+  let arraySextas = document.getElementsByClassName('friday');
+
+  if (fundoSexta !== 'sextou') {
+    for (let index = 0; index < arraySextas.length; index += 1) {
+      document.getElementsByClassName('friday')[index].innerText = 'sextou';
+    }
+  } else {
+    for (let index = 0; index < arraySextas.length; index += 1) {
+      document.getElementsByClassName('friday')[index].innerText = index + 4;
+    }
+  }
 }
