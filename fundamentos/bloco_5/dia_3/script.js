@@ -147,7 +147,7 @@ function addTask(tarefa){
   task.innerText = tarefa;
   let minhasTarefas = document.querySelector('.my-tasks');
   minhasTarefas.appendChild(task);
-}
+};
 addTask('cozinhar');
 
 //Exercicio 8:
@@ -160,3 +160,19 @@ function colorTaskDiv(cor) {
 };
 colorTaskDiv('purple');
 
+//Exercicio 9:
+function selecionaTarefa() {
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let minhasTarefas = document.querySelector('.task');
+
+  minhasTarefas.addEventListener('click', function (event){
+    if (tarefaSelecionada.length === 0){
+      event.target.className = 'task selected';
+    }else {
+      event.target.className = 'task';
+    }
+  });
+}
+selecionaTarefa();
+
+//Exercicio 10:
