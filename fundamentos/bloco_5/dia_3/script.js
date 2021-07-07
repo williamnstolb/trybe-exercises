@@ -129,11 +129,10 @@ function mouseOverDays() {
     event.target.style.fontSize = '40px';
     event.target.style.fontWeight = '400';
   })
-}
+};
 
 function MouseOutDays() {
   let days = document.querySelector('#days');
-
   days.addEventListener('mouseout', function (event) {
     event.target.style.fontSize = '20px';
     event.target.style.fontWeight = '200';
@@ -142,3 +141,13 @@ function MouseOutDays() {
 mouseOverDays();
 MouseOutDays();
 
+//Exercicio 7:
+function addTask(tarefa){
+  let task = document.createElement('span');
+  task.innerText = tarefa;
+  let minhasTarefas = document.querySelector('.my-tasks');
+  minhasTarefas.appendChild(task);
+}
+addTask('cozinhar');
+
+//Exercicio 8:
