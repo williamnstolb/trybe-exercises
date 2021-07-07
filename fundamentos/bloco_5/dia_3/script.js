@@ -28,12 +28,12 @@ function criaDiasNoCalendario() {
 
     let item = document.createElement("li");
     item.className = 'day';
-//para add uma nova classe a um item que ja possui classe se usa classList.add('nova classe')
-    if(dezDaysList[index]===24 || dezDaysList[index]===25 || dezDaysList[index]===31){
+    //para add uma nova classe a um item que ja possui classe se usa classList.add('nova classe')
+    if (dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
       item.classList.add('holiday');
     }
 
-    if(dezDaysList[index]===4 || dezDaysList[index]===11 || dezDaysList[index]===18 || dezDaysList[index]===25){
+    if (dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index] === 25) {
       item.classList.add('friday');
     }
 
@@ -42,22 +42,44 @@ function criaDiasNoCalendario() {
   }
 }
 //Exercicio 2:
-function feriados(Feriados){
+function feriados(Feriados) {
 
   let buttonFeriado = document.createElement('button');
   let buttonTexto = document.createTextNode(Feriados);
+  buttonFeriado.appendChild(buttonTexto);
   buttonFeriado.id = 'btn-holiday';
   let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
   buttonsContainer.appendChild(buttonFeriado);
 }
 //Exercicio 3:
+//Usado para aprender a criar um botao e colocar nome: https://pt.stackoverflow.com/questions/217656/criar-botao-usando-document-createelement
+let clickButtonFeriado = document.getElementById('btn-holiday');
+clickButtonFeriado.addEventListener('click', recebeClick);
 
+function recebeClick() {
+  let corFundo = document.getElementsByClassName('holiday')[0].style.backgroundColor;
+  let diaFeriados = document.getElementsByClassName('holiday');
+
+  if (corFundo !== 'green') {
+    mudaFundo('green', diaFeriados);
+    corFundo = 'green';
+  }else{
+    mudaFundo('rgb(238,238,238)', diaFeriados);
+    }
+}
+//Função auxiliar de recebeClick para evitar dois for, facilitando a leitura do codigo.
+function mudaFundo(cor, diaFeriados){
+  for (let index = 0; index < diaFeriados.length; index += 1) {
+    document.getElementsByClassName('holiday')[index].style.backgroundColor = cor;
+  }
+}
 
 //Exercicio 4:
-function sextou(sexta){
+function sextou(sexta) {
 
   let buttonSexta = document.createElement('button');
   let buttonTexto = document.createTextNode(sexta);
+  buttonSexta.appendChild(buttonTexto);
   buttonSexta.id = 'btn-friday';
   let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
   buttonsContainer.appendChild(buttonSexta);
