@@ -151,3 +151,12 @@ function addTask(tarefa){
 addTask('cozinhar');
 
 //Exercicio 8:
+function colorTaskDiv(cor) {
+  let novaTarefa = document.createElement('div');
+  novaTarefa.className = 'task';
+  let minhasTarefas = document.querySelector('.my-tasks');  
+  novaTarefa.style.backgroundColor = cor;
+  minhasTarefas.appendChild(novaTarefa);
+};
+colorTaskDiv('purple');
+
