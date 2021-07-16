@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="" method="get">
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+    <label for="nome">Nome completo: </label>
+    <input type="text" name="nome" id="nome" required maxlength="40" class="forms">
+    <br>
+    <br>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" required maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" class="forms">
+    <br>
+    <br>
+    <label for="cpf">CPF: </label>
+    <input type="cpf" name="cpf" id="cpf" required maxlength="11" minlength="11" type="number" placeholder="Somente números" class="forms" pattern="d{3}\.\d{3}\.\d{3}\-\d{2}">
+    <br>
+    <br>
+    <label for="endereco">Endereço: </label>
+    <input type="text" name="endereco" id="endereco" maxlength="200" required class="forms">
+    <br>
+    <br>
+    <label for="cidade">Cidade: </label>
+    <input type="text" name="cidade" id="cidade" maxlength="28" required class="forms">
+    <br>
+    <br>
+    <label for="estado">Estado:
+      <select name="estado" id="estado" required class="forms">
+      </select>
+    </label>
+    <br>
+    <br>
+    <label for="moradia" name='moradia'>Moradia: </label>
+    <input type="radio" name="moradia" id="casa" required value="casa" class="forms" checked>
+    <label for="casa">Casa </label>
+    <input type="radio" name="moradia" id="apartamento" required value="Apartamento" class="forms">
+    <label for="apartamento">Apartamento </label>    
+    <br>
+  </fieldset>
+  <fieldset>
+    <legend>Último Emprego</legend>
+    <label for="resumo"></label>
+    <textarea name="" id="resumo" cols="30" rows="10" maxlength="1000" required placeholder="Resumo do currículo" class="forms"></textarea>
+    <br>
+    <label for="cargo">Cargo: </label>
+    <input type="text" name="cargo" maxlength="40" required id="cargo" class="forms">
+    <br>
+    <label for="descricao">Descrição do cargo: </label>
+    <input type="text" name="descricao" maxlength="500" required id="descricao" class="forms">
+    <br>
+    <label for="data">Data: </label>
+    <input type="date" name="data" required id="data" class="forms">
+  </fieldset>
+  <br>
+  <button id="interrompe" type="submit">Confirmar</button>
+  <button type="reset" id="reset">Reset</button>
+</form>
+<div id="confimacao"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
